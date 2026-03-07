@@ -46,27 +46,10 @@ A local-first AI assistant can deliver useful reasoning and productivity assista
 
 ---
 
-## Architecture
-
-User
-↓
-Assistant UI
-↓
-Backend API
-↓
-Ollama Model Runtime
-↓
-DeepSeek R1 Reasoning Model
-↓
-Local Memory Store
-
----
-
 ## Architecture Diagram
 <p align="center">
   <img src="local-ai-assistant-architecture.png" width="700">
 </p>
----
 
 ---
 
