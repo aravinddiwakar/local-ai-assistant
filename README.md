@@ -1,49 +1,89 @@
-# Local AI Assist
+# Local AI Assistant
 
-A privacy-first AI assistant running entirely on local infrastructure.
+## Overview
 
-## Problem
+A privacy-first AI assistant designed to run entirely on local infrastructure using open-source large language models.
 
-Most AI assistants rely on cloud-based models which introduce concerns around:
+This project explores how local AI systems can provide useful reasoning capabilities while eliminating the privacy and cost concerns associated with cloud-based AI services.
 
-* data privacy
-* latency
-* operational cost
+---
 
-## Solution
+## Product Context
 
-This project explores a **local-first AI assistant architecture** using local LLM inference and persistent memory.
+Most AI assistants rely on cloud APIs.
 
-## Key Features
+This introduces several challenges:
 
-* Local language model inference
-* Persistent conversation memory
-* Web-based interface
-* Modular AI workflow design
+• Privacy concerns when sending sensitive data
+• API costs at scale
+• Latency due to remote inference
+
+Local AI assistants allow organizations and individuals to run AI systems directly on their own machines.
+
+---
+
+## Target Users
+
+• Developers working with private code
+• Enterprises with strict data governance policies
+• Offline environments
+• Privacy-conscious users
+
+---
+
+## Product Hypothesis
+
+A local-first AI assistant can deliver useful reasoning and productivity assistance while maintaining full control over user data.
+
+---
+
+## Core Capabilities
+
+• Local LLM inference
+• Chat-based AI assistant interface
+• Modular architecture for workflows
+• Persistent memory (future capability)
+
+---
 
 ## Architecture
 
-User Interface
+User
+↓
+Assistant UI
 ↓
 Backend API
 ↓
-Ollama
+Ollama Model Runtime
 ↓
-DeepSeek R1
+DeepSeek R1 Reasoning Model
 ↓
-Memory Store
+Local Memory Store
 
-## Product Thinking
+---
 
-Local AI assistants may become increasingly important for:
+## Architecture Diagram
+<p align="center">
+  <img src="local-ai-assistant-architecture.png" width="700">
+</p>
+---
 
-* enterprises with sensitive data
-* developers who require offline systems
-* organizations seeking lower inference costs
+---
 
-## Future Roadmap
+## Product Tradeoffs
 
-V1 – Local chat interface
-V2 – Persistent memory system
-V3 – document knowledge ingestion
-V4 – autonomous agent workflows
+Local models provide strong privacy guarantees and lower operational costs but may have lower performance compared to large cloud-hosted models.
+
+Designing useful local AI assistants requires balancing performance, latency, and resource usage.
+
+---
+
+## Product Roadmap
+
+V1 — Local chat assistant
+
+V2 — Persistent memory
+
+V3 — Document ingestion
+
+V4 — Autonomous task workflows
